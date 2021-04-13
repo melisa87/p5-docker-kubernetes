@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -d -p 8080:8080 proj-docker-kuber
+docker run -d -e PYTHONUNBUFFERED=1 -p 8080:80 proj-docker-kuber
