@@ -5,11 +5,15 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=melisa87/udacity_project5
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login
+docker tag 73fc7e971ed9 melisa87/udacity_project5:latest
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath:latest
+
