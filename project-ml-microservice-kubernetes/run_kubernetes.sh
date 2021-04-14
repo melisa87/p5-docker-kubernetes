@@ -10,8 +10,8 @@ dockerpath=melisa87/udacity_project5:latest
 # Step 2
 # Run the Docker Hub container with kubernetes
 #kubectl run NAME --image=DOCKER_IMAGE --port=YOUR_PORT
-#kubectl run udacity_project5 --generator=run-pod/v1 --image=$dockerpath --port=80
-kubectl run --generator=run-pod/v1 --image=$dockerpath udacity_project5 --port=80
+kubectl run udacity_project5 --generator=run-pod/v1 --image=$dockerpath --port=80
+
 
 # Step 3:
 # List kubernetes pods
