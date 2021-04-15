@@ -10,7 +10,7 @@ dockerpath=melisa87/udacity_project5:latest
 # Step 2
 # Run the Docker Hub container with kubernetes
 #kubectl run NAME --image=DOCKER_IMAGE --port=YOUR_PORT
-kubectl run udacity_project5 --generator=run-pod/v1 --image=$dockerpath --port=80
+kubectl run udacity_project5 --image=$dockerpath --port=80
 
 
 # Step 3:
@@ -20,7 +20,8 @@ sleep 90s
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward udacity_project5 8000:80
+#kubectl port-forward udacity_project5 8000:80
+kubectl expose deployment udacity_project5 --type=LoadBalancer --port=8000 --target-port=80
 
 kubectl logs udacity_project5
 
