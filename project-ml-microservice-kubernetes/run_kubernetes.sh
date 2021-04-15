@@ -20,6 +20,6 @@ sleep 90s
 
 # Step 4:
 # Forward the container port to a host
-#kubectl port-forward udacity_project5 8000:80
-kubectl expose deployment project5 --type=LoadBalancer --port=8000 --target-port=80
+kubectl port-forward project5 8000:80
+#kubectl expose deployment project5 --type=LoadBalancer --port=8000 --target-port=80
 
