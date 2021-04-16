@@ -26,8 +26,8 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv devops (or any other name) and activate it using following commmands:
- `python3 -m venv ~/.devops `
- `source ~/.devops/bin/activate`
+ * `python3 -m venv ~/.devops `
+ *`source ~/.devops/bin/activate`
   
 * Run `make install` to install the necessary dependencies (they are listed in `requirements.txt` file)
 * Run `make lint` to test your code. Your code should be rated with the highest number
@@ -43,7 +43,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
    You will be able to see the output from the script.
 4. Create an account at [Docker Hub](https://hub.docker.com/) and create new repository there
 5. Upload the image to the DockerHub using the `./upload_docker.sh` . You have to put your own DockerHub path and to enter your DockerHub credentials.
-6. Configure Kubernetes to run locally
+6. Configure [Kubernetes](https://kubernetes.io/docs/tasks/tools/) and [minikube](https://minikube.sigs.k8s.io/docs/start/) to run locally
 
 
 You should have a virtual machine like VirtualBox and minikube installed, as per the project environmet instructions. To start a local cluster, type the terminal command: **minikube start**.
