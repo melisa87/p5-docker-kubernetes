@@ -26,7 +26,7 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv devops (or any other name) and activate it using following commmands:
- * `python3 -m venv ~/.devops `
+ * `python3 -m venv ~/.devops `<br/>
  *`source ~/.devops/bin/activate`
   
 * Run `make install` to install the necessary dependencies (they are listed in `requirements.txt` file)
