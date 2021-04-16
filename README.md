@@ -1,7 +1,5 @@
 [![CircleCI](https://circleci.com/gh/melisa87/p5-docker-kubernetes.svg?style=svg)](https://github.com/melisa87/p5-docker-kubernetes)
 
-
-
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -28,10 +26,14 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv devops (or any other name) and activate it using following commmands:
-* * `python3 -m venv ~/.devops `
-* * `source ~/.devops/bin/activate`
+ `python3 -m venv ~/.devops `
+ `source ~/.devops/bin/activate`
   
 * Run `make install` to install the necessary dependencies (they are listed in `requirements.txt` file)
+* Run `make lint` to test your code. Your code should be rated with the highest number
+
+ ------------------------------------
+ Your code has been rated at 10.00/10
 
 ### Running `app.py`
 
@@ -43,11 +45,17 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 5. Upload the image to the DockerHub using the `./upload_docker.sh` . You have to put your own DockerHub path and to enter your DockerHub credentials.
 6. Configure Kubernetes to run locally
 
+
 You should have a virtual machine like VirtualBox and minikube installed, as per the project environmet instructions. To start a local cluster, type the terminal command: **minikube start**.
 
 After minikube starts, a cluster should be running locally. You can check that you have one cluster running by typing **kubectl config view** where you should see at least one cluster with a certificate-authority and server. 
 
-4. Run in Kubernetes:  `./run_kubernetes.sh`
+7. Run in Kubernetes:  `./run_kubernetes.sh`
+8. After running `./run_kubernetes.sh`, and a pod is up and running, make a prediction using a separate terminal tab, and a call to `./make_prediction.sh`, as you did before.
+9. Delete Cluster
+After you’re done deploying your containerized application and making test predictions via Kubernetes cluster, you should clean up your resources and delete the kubernetes cluster with a call to **minikube delete**.
+
+You can also pause your work and save the cluster state with a call to **minikube stop**. 
 
 ### Kubernetes Steps
 
