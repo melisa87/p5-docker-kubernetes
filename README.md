@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/circleci/p5-docker-kubernetes.svg?style=shield)](https://app.circleci.com/pipelines/github/melisa87/p5-docker-kubernetes/6/workflows/8100b5e4-8a38-437a-a0b6-f468cd84b214/jobs/6)
 
 ## Project Overview
 
@@ -40,9 +40,3 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
-
-# Template:
-[![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>)
-
-# Example:
-[![CircleCI](https://circleci.com/gh/circleci/p5-docker-kubernetes.svg?style=svg)](https://app.circleci.com/pipelines/github/melisa87/p5-docker-kubernetes/6/workflows/8100b5e4-8a38-437a-a0b6-f468cd84b214/jobs/6)
