@@ -1,4 +1,6 @@
-[![CircleCI](https://circleci.com/gh/circleci/p5-docker-kubernetes.svg?style=shield)](https://app.circleci.com/pipelines/github/melisa87/p5-docker-kubernetes/6/workflows/8100b5e4-8a38-437a-a0b6-f468cd84b214/jobs/6)
+[![CircleCI](https://circleci.com/gh/melisa87/p5-docker-kubernetes.svg?style=shield)](https://app.circleci.com/pipelines/github/melisa87/p5-docker-kubernetes/6/workflows/8100b5e4-8a38-437a-a0b6-f468cd84b214/jobs/6)
+
+https://circleci.com/gh/melisa87/p5-docker-kubernetes.svg?style=svg
 
 ## Project Overview
 
