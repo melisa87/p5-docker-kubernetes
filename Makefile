@@ -12,7 +12,15 @@ setup:
 
 install:
 	# This should be run from inside a virtualenv
+ifeq ("$(shell uname -s)", "Darwin")
+	echo "I am on OSX"
 	brew install hadolint
+endif
+ifeq ("$(shell uname -s)", "Linux")
+	echo "I am on Linux"
+	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
+	chmod +x /bin/hadolint
+endif
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
