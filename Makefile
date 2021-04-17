@@ -5,6 +5,12 @@
 # app.py should pass pylint
 # (Optional) Build a simple integration test
 
+	ifeq (ok, ok)
+		echo "foo equals ok"
+	else
+		echo "nope"
+	endif
+
 setup:
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
@@ -12,6 +18,7 @@ setup:
 
 install:
 	# This should be run from inside a virtualenv
+	brew install hadolint
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
