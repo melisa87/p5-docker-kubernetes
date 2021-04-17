@@ -6,3 +6,15 @@ project5                      1/1     Running   0          19m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+(.devops) Bekans-MBP:p5-docker-kubernetes bekan$ ls
+Dockerfile		README.md		make_prediction.sh	output_txt_files	run_docker.sh		upload_docker.sh
+Makefile		app.py			model_data		requirements.txt	run_kubernetes.sh
+(.devops) Bekans-MBP:p5-docker-kubernetes bekan$ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
