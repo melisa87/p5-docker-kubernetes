@@ -1,1 +1,8 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) Bekans-MBP:project-ml-microservice-kubernetes bekan$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "project5" already exists
+NAME                          READY   STATUS    RESTARTS   AGE
+hello-node-7567d9fdc9-jdjh4   1/1     Running   0          4d15h
+project5                      1/1     Running   0          19m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
